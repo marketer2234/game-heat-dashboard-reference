@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ゲーム熱量ダッシュボード リファレンス — 目的別の見る場所と指標の性質（2026年9月時点）</title>
+<meta name="description" content="国内と海外に分けてゲームの熱量をスコア化するダッシュボードについて、目的別に見る画面と、各指標の意味・含まれないものを表にまとめたリファレンス">
+<style>
+:root{color-scheme:light dark}
+body{font-family:system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;
+line-height:1.9;max-width:860px;margin:0 auto;padding:32px 20px 80px;color:#222;background:#fff}
+@media (prefers-color-scheme:dark){body{color:#e8e8e8;background:#161616}a{color:#8ab4f8}}
+h1{font-size:1.7rem;line-height:1.5;margin:0 0 24px}
+h2{font-size:1.25rem;margin:40px 0 12px;padding-bottom:6px;border-bottom:1px solid #ddd}
+h3{font-size:1.05rem;margin:28px 0 8px}
+@media (prefers-color-scheme:dark){h2{border-color:#444}}
+img{max-width:100%;height:auto;border-radius:6px;margin:16px 0}
+ul{padding-left:1.4em}li{margin:6px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:.95rem}
+th,td{border:1px solid #ddd;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:rgba(128,128,128,.12)}
+@media (prefers-color-scheme:dark){th,td{border-color:#444}}
+.table-wrap{overflow-x:auto}
+code{background:rgba(128,128,128,.15);padding:2px 5px;border-radius:3px;font-size:.92em}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid #ddd;font-size:.85rem;opacity:.8}
+@media (prefers-color-scheme:dark){footer{border-color:#444}}
+</style>
+</head>
+<body>
+<h1>ゲーム熱量ダッシュボード リファレンス — 目的別の見る場所と指標の性質（2026年9月時点）</h1>
+<p>ゲームタイトルの盛り上がりを国内と海外に分けて毎日スコア化しているダッシュボードについて、「知りたいこと」から逆引きできるように、画面と指標の対応を表にしました。数字をどう読めばよいか、何が含まれていないかも同じ表に並べています。</p>
+<p><strong>内容は2026年9月時点の公開ページ(トップ・サービス紹介)の記載に基づきます。</strong> スコアや順位は毎日変わるため、このページには載せていません。最新の値はダッシュボードで確認してください。</p>
+<img src="https://marketer2234-seesaa-blog.up.seesaa.net/image/ss-ga-top.png" alt="GameAxiz">
+<p>→ <a href="https://gameaxiz.com/">国内と海外のゲーム熱量を毎日スコア化するダッシュボード GameAxiz</a></p>
+<h2>目的別の逆引き表</h2>
+<table><thead><tr><th>知りたいこと</th><th>見る場所</th><th>見る値</th><th>読むときの注意</th></tr></thead><tbody><tr><td>日本でいま話題のタイトル</td><td>ランキング「国内が熱い順」</td><td>国内スコア</td><td>日本語版 Wikipedia の閲覧数と国内メディアの記事本数が中心</td></tr><tr><td>海外でいま話題のタイトル</td><td>ランキング「海外が熱い順」</td><td>海外スコア</td><td>Twitch の視聴者数と英語版 Wikipedia が中心</td></tr><tr><td>国内外の温度差</td><td>国内×海外の熱量マップ</td><td>点の位置</td><td>横軸が国内、縦軸が海外。区画の意味は下の表</td></tr><tr><td>急に伸びているタイトル</td><td>ランキング「急上昇」/ 7日間の伸び</td><td>1週間前との差</td><td>プラスが大きいほど伸びている。短期の変化を見る値</td></tr><tr><td>そのスコアになった理由</td><td>ランキングでカーソルを合わせる / タイトル詳細</td><td>牽引している指標・内訳</td><td>どの材料が効いているかで、話題の出どころが分かる</td></tr><tr><td>あるタイトルの流れ</td><td>タイトル詳細</td><td>推移グラフ</td><td>期間は7日・30日・90日で切り替え。数値の表でも見られる</td></tr><tr><td>どれだけ遊ばれてきたか</td><td>ランキング・タイトル詳細の販売規模</td><td>販売規模(推定)</td><td>Steam のレビュー数が元。家庭用ゲーム機の売上は含まない</td></tr><tr><td>これから出るタイトル</td><td>発売予定カレンダー</td><td>発売日</td><td>6か月以内が対象。国内の定義は下の「掲載範囲」</td></tr><tr><td>大会のある時期</td><td>eSports 大会</td><td>開催予定・開催中</td><td>大会期間中は配信の視聴者数が伸び、スコアにも出る</td></tr><tr><td>公式の告知・ニュース</td><td>今週の動き / ニュース</td><td>日付・見出し・配信元</td><td>本文は各媒体の記事ページで読む</td></tr></tbody></table>
+<img src="https://marketer2234-seesaa-blog.up.seesaa.net/image/ss-ga-ranking.png" alt="熱量ランキング">
+<h2>スコアの材料</h2>
+<table><thead><tr><th>区分</th><th>内容</th></tr></thead><tbody><tr><td>集計する公開データ</td><td>配信の同時視聴者数、Steam の同時接続数、Wikipedia の閲覧数、メディアの記事本数、検索トレンド、コミュニティ規模、販売規模など <strong>10種類以上</strong></td></tr><tr><td>集計の頻度</td><td>毎日</td></tr><tr><td>再計算の時刻</td><td><strong>毎日 日本時間 7:00</strong></td></tr><tr><td>数値の直し方</td><td>その日の全タイトル中での <strong>相対値(0〜100)</strong> に直してから合成</td></tr><tr><td>国内スコアの中心</td><td>日本語版 Wikipedia の閲覧数、国内メディアの記事本数</td></tr><tr><td>海外スコアの中心</td><td>Twitch の視聴者数、英語版 Wikipedia</td></tr><tr><td>合成のしかた</td><td>国内向けの重みと海外向けの重みで <strong>別々に</strong> 合成(重みの具体的な数値は非公開)</td></tr></tbody></table>
+<h2>数字ごとの性質</h2>
+<table><thead><tr><th>数字</th><th>表しているもの</th><th>表していないもの</th><th>動き方</th></tr></thead><tbody><tr><td>熱量スコア(総合・国内・海外)</td><td>その日の全タイトルの中での相対的な盛り上がり</td><td>絶対的な人気の大きさ</td><td>毎日再計算される</td></tr><tr><td>7日間の伸び</td><td>1週間前のスコアとの差</td><td>盛り上がりの大きさそのもの</td><td>発売・アップデート・大会などで短期に動く</td></tr><tr><td>販売規模</td><td>Steam のレビュー数を基にした推定</td><td>公式の販売本数、家庭用ゲーム機の売上</td><td>積み上がる量なので、ゆっくり動く</td></tr></tbody></table>
+<p>相対値なので、同じタイトルのスコアが前日と同じでも、ほかのタイトルが動けば順位は変わります。</p>
+<h2>国内×海外の熱量マップの区画</h2>
+<table><thead><tr><th>位置</th><th>意味</th></tr></thead><tbody><tr><td>右上</td><td>国内でも海外でも熱い</td></tr><tr><td>左上</td><td>海外で先に火がついている</td></tr><tr><td>右下</td><td>国内が先行していて、海外はまだ動いていない</td></tr><tr><td>円の大きさ</td><td>総合の熱量スコア</td></tr></tbody></table>
+<img src="https://marketer2234-seesaa-blog.up.seesaa.net/image/ss-ga-scatter.png" alt="国内×海外の熱量マップ">
+<h2>タイトル詳細ページの項目</h2>
+<table><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>スコア</td><td>総合・国内・海外の3つ</td></tr><tr><td>内訳</td><td>スコアを押し上げている指標</td></tr><tr><td>推移</td><td>グラフ(7日 / 30日 / 90日)と数値の表</td></tr><tr><td>紹介枠</td><td>上達を手伝えるコーチや動画編集者、初心者が質問しやすい Discord の部屋。掲載は運営が内容を確認したものだけ</td></tr></tbody></table>
+<img src="https://marketer2234-seesaa-blog.up.seesaa.net/image/ss-ga-game.png" alt="タイトル詳細">
+<h2>掲載範囲</h2>
+<table><thead><tr><th>項目</th><th>範囲</th></tr></thead><tbody><tr><td>熱量を毎日測るタイトル</td><td>注目タイトル 約6,000件</td></tr><tr><td>検索の対象</td><td>カタログ全体(PS5 / Switch 2 / Xbox / PC / スマホを横断)</td></tr><tr><td>プラットフォームの絞り込み</td><td>PS5 / Nintendo Switch / Nintendo Switch 2 / Xbox Series X/S / Meta Quest 3 / PC(Steam ほか) / スマホ(iOS・Android)</td></tr><tr><td>ニュース</td><td>国内6媒体・海外5媒体。見出しと配信元のみ掲載</td></tr><tr><td>今週の動き</td><td>公式のアップデート告知・発売・eSports 大会を日付順。英語の告知は日本語訳の見出しを併記(AI 翻訳)</td></tr><tr><td>発売予定カレンダー</td><td>6か月以内。国内の欄は「日本での発売日が確認できたもの」と「日本語対応で日本のストアに並ぶもの」</td></tr><tr><td>利用条件</td><td>閲覧は無料。登録なしで見られる</td></tr></tbody></table>
+<h2>編集の方針</h2>
+<table><thead><tr><th>方針</th><th>内容</th></tr></thead><tbody><tr><td>転載しない</td><td>他媒体の記事を要約・転載しない</td></tr><tr><td>扱わない話題</td><td>炎上・煽り・叩き</td></tr><tr><td>数値の添え方</td><td>数値には根拠と比較対象を添える</td></tr><tr><td>熱量レポート</td><td>集計したスコアと公開 API の数値だけを根拠に作成</td></tr><tr><td>AI の下書き</td><td>AI が下書きした記事はその旨を明記。公開前に必ず人が確認し、自動では公開しない</td></tr></tbody></table>
+<img src="https://marketer2234-seesaa-blog.up.seesaa.net/image/ss-ga-about.png" alt="サービス紹介">
+<p>本ページはプロモーションが含まれています</p>
+<footer>本ページはプロモーションが含まれています</footer>
+</body>
+</html>
